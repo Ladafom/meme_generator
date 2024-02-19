@@ -1,0 +1,26 @@
+.header-meme {
+  height: 65px;
+  /* background: rgb(103,34,128); */
+  background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0 29px ;
+}
+.logo {
+  display: flex;
+  gap: 7px;
+}
+.logo-img {
+  width: 31px;
+}
+.logo-title {
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -2.075px;
+}
+.header-title {
+  font-size: 12px;
+  font-weight: 500;
+}
