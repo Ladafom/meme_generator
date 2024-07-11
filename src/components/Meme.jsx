@@ -5,21 +5,6 @@ function Meme () {
 
   const imgFromUser = document.getElementById('image-file')
   const memeToDownload = document.querySelector('.meme')
-  // const widthRef = React.useRef()
-  // const [memeWidth, setMemeWidth] = React.useState()
-  // React.useEffect(() => {
-  //   //const memeImg = document.querySelector('.meme-img')
-  //   setMemeWidth(widthRef.current.clientWidth)
-  //   console.log(memeWidth)
-  //   // function handleResize() {
-  //   //   const width = widthRef.current.clientWidth;
-  //   //   setMemeWidth(width)
-  //   // }
-  //   //handleResize(); // initial call to get width and height of the element
-  //   //console.log(memeImg)
-  //   //memeImg.onload = function(){handleResize};
-  //   // return () => window.removeEventListener("resize", handleResize);
-  //   }, );
 
   const [allMemes, setAllMemes] = React.useState([])
   React.useEffect(() => {
@@ -93,14 +78,14 @@ function Meme () {
         <button className="form-btn" onClick={getMemeImg}>Get a new meme image  🖼</button>
       </div>
       <div className="image-downloader">
-          <input type="file"
-            id="image-file"
-            name="meme"
-            accept=".png, .jpg, .jpeg"
-            className="image-file"
-            onChange={loadImage}
-          />
-          <label htmlFor="image-file" className="image-file-label">Upload your own picture</label>
+        <input type="file"
+          id="image-file"
+          name="meme"
+          accept=".png, .jpg, .jpeg"
+          className="image-file"
+          onChange={loadImage}
+        />
+        <label htmlFor="image-file" className="image-file-label">Upload your own picture</label>
         </div>
       <div className="meme">
         <img src={meme.randomImg} alt="" className="meme-img"/>
