@@ -1,6 +1,6 @@
 # Генератор мемов
 
-![Meme generator](/src/assetsmeme_generator.jpg/meme_generator.jpg)
+![Meme generator](/src/assets/meme_generator.jpg)
 
 - Версия npm 10.2.4.
 
